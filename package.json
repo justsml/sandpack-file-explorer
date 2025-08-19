@@ -1,7 +1,8 @@
 {
-  "name": "sandpack-file-explorer",
+  "name": "@justsml/sandpack-file-explorer",
   "description": "A file explorer for Codesandbox's 'sandpack' code editor",
-  "version": "0.0.7",
+  "version": "0.0.8",
+  "packageManager": "yarn@1.22.22",
   "author": "Aaron Powell",
   "license": "MIT",
   "keywords": [
@@ -15,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AaronPowell96/sandpack-file-explorer.git"
+    "url": "git+https://github.com/justsml/sandpack-file-explorer.git"
   },
   "scripts": {
     "dev": "concurrently \"yarn build --watch\" \"yarn storybook\"",
@@ -61,7 +62,8 @@
   "exports": {
     ".": {
       "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
